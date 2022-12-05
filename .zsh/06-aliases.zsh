@@ -41,3 +41,4 @@ alias copy="wl-copy" # requires wl-clipboard package, piping into it copies
 alias update-mirrors="sudo reflector --country US --protocol http,https --age 12 --sort rate -n 5 --save /etc/pacman.d/mirrorlist --verbose"
 # alias gloomhaven="java -jar /run/media/mark/DATA/programs/GloomhavenHelper/ghh.jar"
 alias phone="scrcpy"
+alias rsync="rsync --verbose"
