@@ -71,20 +71,32 @@ ICO_DIVERGED="↕"
 
 # color reference: https://www.ditig.com/256-colors-cheat-sheet
 
-COLOR_TEXT_BG_DARK="15" # white
-COLOR_TEXT_BG_LIGHT="0" # black
+COLOR_PATH="15" # white
 
 # NOTE: root colors will only work if .zshrc and the files in .zsh are also in /root/ (you can symlink them)
 if [[ "$EUID" -ne "0" ]]
 then  # if user is not root
-  COLOR_USER="36" # teal 36 | blue 27
-  COLOR_HOST="43" # teal 43 | blue 33
-  COLOR_PATH="15" # white
-  COLOR_GIT="30" # teal 30 | blue 25
-else # root
+  if [ "$HOST" = "roshar" ] # teal
+  then
+    COLOR_USER="36" # teal 36
+    COLOR_HOST="43" # teal 43
+    COLOR_GIT="30" # teal 30
+  fi
+  if [ "$HOST" = "scadrial" ] # blue
+  then
+    COLOR_USER="27" # blue 27
+    COLOR_HOST="33" # blue 33
+    COLOR_GIT="25" # blue 25
+  fi
+  if [ "$HOST" = "braize" ] # purple
+  then
+    COLOR_USER="57" # purple 57
+    COLOR_HOST="93" # purple 93
+    COLOR_GIT="55" # purple 55
+  fi
+else # root, red
   COLOR_USER="88"
   COLOR_HOST="124"
-  COLOR_PATH="15" # white
   COLOR_GIT="52"
 fi
 
