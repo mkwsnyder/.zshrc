@@ -15,8 +15,8 @@ autoload -Uz colors && colors
 
 # ===== ICONS =====
 
-# may require this font (note, you shouldn't need to change your terminal font, it should fallback for the icons)  https://github.com/romkatv/powerlevel10k#manual-font-installation
-# (if the above doesn't work) may require the awesome-terminal-fonts package (https://github.com/gabrielelana/awesome-terminal-fonts) and/or a nerd font (https://www.nerdfonts.com/)
+# may require this font (note, you shouldn't need to change your terminal font, it should fallback for the icons) https://github.com/romkatv/powerlevel10k#manual-font-installation (aur/ttf-meslo-nerd-font-powerlevel10k)
+# (if the above doesn't work) may require the awesome-terminal-fonts package (https://github.com/gabrielelana/awesome-terminal-fonts, aur/awesome-terminal-fonts) and/or a nerd font (https://www.nerdfonts.com/)
 # full list of icons (don't view this file via the web browser, icons may not show up properly) https://raw.githubusercontent.com/romkatv/powerlevel10k/master/internal/icons.zsh
 
 ICO_OS=""
