@@ -27,6 +27,7 @@ export LESSCHARSET=utf-8
 
 export OS=$machine
 
+export QT_QPA_PLATFORM=wayland
 
 # https://github.com/nvm-sh/nvm
 
