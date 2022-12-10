@@ -233,7 +233,8 @@ setopt no_prompt_bang prompt_percent prompt_subst
 # visual effects reference: https://man.archlinux.org/man/zshmisc.1#Visual_effects
 
 PROMPT='%${COLOR_USER}K %f%n %${COLOR_USER}F%${COLOR_HOST}K %f%m %${COLOR_HOST}F%${COLOR_PATH}K %${COLOR_TEXT_BG_LIGHT}F%~ ${GITSTATUS_PROMPT}$reset_color%f%k'
-PROMPT+=$'\n%${COLOR_USER}F██▓▒░%f '
+# PROMPT+=$'\n%${COLOR_USER}F🭓█▓▒░%f '
+prompt+=$'\n%${COLOR_USER}F❱%f '
 
 # old prompt
 # PROMPT='%K{36} %n %F{36}%K{43} %f%m %F{43}%K{white} %F{black}%~ $(GIT_PROMPT)$reset_color%f%k
