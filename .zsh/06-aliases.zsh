@@ -14,7 +14,8 @@ eval $(thefuck --alias)
 # overrides
 alias mkdir="mkdir -p"
 alias cp="cp -r"
-alias sctl="sudo systemctl" # this isn't the *best* idea
+alias sctl="sudo systemctl"
+alias uctl="systemctl --user"
 alias su="sudo su"
 
 # overrides colors
@@ -37,8 +38,9 @@ alias usu-vpn-staff="sudo openconnect sslvpn.usu.edu/staff"
 alias remove-orphans="pacman -Qtdq | sudo pacman -Rns -"
 alias md-to-pdf="pandoc -o output.pdf"
 # alias copy="xclip -selection c" # used by piping into `copy` e.g. `cat README.md | copy` ONLY WORKS ON XORG
-alias copy="wl-copy" # requires wl-clipboard package, piping into it copies
+alias copy="wl-copy" # requires wl-clipboard package, piping into it copies ONLY WORKS ON WAYLAND
 alias update-mirrors="sudo reflector --country US --protocol http,https --age 12 --sort rate -n 5 --save /etc/pacman.d/mirrorlist --verbose"
 # alias gloomhaven="java -jar /run/media/mark/DATA/programs/GloomhavenHelper/ghh.jar"
 alias phone="scrcpy"
 alias rsync="rsync --verbose"
+alias unfucklock="sudo loginctl unlock-sessions" # kde screenlocker can eat a bag of dicks
