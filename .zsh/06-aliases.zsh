@@ -29,6 +29,7 @@ alias ytmp3="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0"
 alias yt480="yt-dlp -f 'bestvideo*+bestaudio/b' --remux-video mp4 -S 'height:480'"
 alias yt720="yt-dlp -f 'bestvideo*+bestaudio/b' --remux-video mp4 -S 'height:720'"
 alias yt1080="yt-dlp -f 'bestvideo*+bestaudio/best' --remux-video mp4 -S 'height:1080'"
+alias yt1440="yt-dlp -f 'bestvideo*+bestaudio/best' --remux-video mp4 -S 'height:1440'"
 alias ytmax="yt-dlp -f 'bestvideo*+bestaudio/best' --remux-video mp4"
 
 # custom
