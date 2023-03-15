@@ -81,23 +81,27 @@ then  # if user is not root
     COLOR_USER="36" # teal 36
     COLOR_HOST="43" # teal 43
     COLOR_GIT="30" # teal 30
+    COLOR_FOREGROUND="0" # black 0
   fi
   if [ "$HOST" = "scadrial" ] # blue
   then
     COLOR_USER="27" # blue 27
     COLOR_HOST="33" # blue 33
     COLOR_GIT="25" # blue 25
+    COLOR_FOREGROUND="15" # white 15
   fi
   if [ "$HOST" = "braize" ] # purple
   then
     COLOR_USER="57" # purple 57
     COLOR_HOST="93" # purple 93
     COLOR_GIT="55" # purple 55
+    COLOR_FOREGROUND="15" # white 15
   fi
 else # root, red
   COLOR_USER="88"
   COLOR_HOST="124"
   COLOR_GIT="52"
+  COLOR_FOREGROUND="15" # white 15
 fi
 
 # ===== END COLORS =====
@@ -196,7 +200,7 @@ function gitstatus_prompt_update() {
   # *42 if have stashes.
   (( VCS_STATUS_STASHES        )) && p+=" ${clean}${ICO_STASHED}${VCS_STATUS_STASHES}"
   # 'merge' if the repo is in an unusual state.
-  [[ -n $VCS_STATUS_ACTION     ]] && p+="  ${conflicted}${VCS_STATUS_ACTION}"
+  [[ -n $VCS_STATUS_ACTION     ]] && p+=" ${conflicted}${VCS_STATUS_ACTION}"
   # ~42 if have merge conflicts.
   (( VCS_STATUS_NUM_CONFLICTED )) && p+=" ${conflicted}${ICO_CONFLICTED}${VCS_STATUS_NUM_CONFLICTED}"
   # +42 if have staged changes.
@@ -232,7 +236,7 @@ setopt no_prompt_bang prompt_percent prompt_subst
 
 # visual effects reference: https://man.archlinux.org/man/zshmisc.1#Visual_effects
 
-PROMPT='%${COLOR_USER}K %f%n %${COLOR_USER}F%${COLOR_HOST}K %f%m %${COLOR_HOST}F%${COLOR_PATH}K %${COLOR_TEXT_BG_LIGHT}F%~ ${GITSTATUS_PROMPT}$reset_color%f%k'
+PROMPT='%${COLOR_USER}K %${COLOR_FOREGROUND}F%n %${COLOR_USER}F%${COLOR_HOST}K %${COLOR_FOREGROUND}F%m %${COLOR_HOST}F%${COLOR_PATH}K %${COLOR_TEXT_BG_LIGHT}F%~ ${GITSTATUS_PROMPT}$reset_color%f%k'
 # PROMPT+=$'\n%${COLOR_USER}F🭓█▓▒░%f '
 prompt+=$'\n%${COLOR_USER}F❱%f '
 
