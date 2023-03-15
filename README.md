@@ -3,3 +3,5 @@ An easier way to share my `zsh` config. If you want to use this, you will need t
 **Example:**
 
 ![example of shell prompt](./example.png)
+
+![second example of shell prompt](./example-2.png)
