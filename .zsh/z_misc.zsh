@@ -14,6 +14,6 @@
 # . $HOME/.asdf/completions/asdf.bash
 
 # ghostscript avoid "permission denied error"
-alias gs="gs -dNOSAFER"
+# alias gs="gs -dNOSAFER"
 # haskell stuff
-[ -f "/home/mark/.ghcup/env" ] && source "/home/mark/.ghcup/env" # ghcup-env
+# [ -f "/home/mark/.ghcup/env" ] && source "/home/mark/.ghcup/env" # ghcup-env
