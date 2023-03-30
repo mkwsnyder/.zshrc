@@ -9,8 +9,6 @@
 #
 # aliases
 
-eval $(thefuck --alias)
-
 # overrides
 alias mkdir="mkdir -p"
 alias cp="cp -r"
@@ -41,7 +39,6 @@ alias md-to-pdf="pandoc -o output.pdf"
 # alias copy="xclip -selection c" # used by piping into `copy` e.g. `cat README.md | copy` ONLY WORKS ON XORG
 alias copy="wl-copy" # requires wl-clipboard package, piping into it copies ONLY WORKS ON WAYLAND
 alias update-mirrors="sudo reflector --country US --protocol http,https --age 12 --sort rate -n 5 --save /etc/pacman.d/mirrorlist --verbose"
-# alias gloomhaven="java -jar /run/media/mark/DATA/programs/GloomhavenHelper/ghh.jar"
 alias phone="scrcpy"
 alias phonea="sndcpy"
 alias rsync="rsync --verbose"
