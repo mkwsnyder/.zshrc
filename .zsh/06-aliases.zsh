@@ -43,3 +43,4 @@ alias phone="scrcpy"
 alias phonea="sndcpy"
 alias rsync="rsync --verbose"
 alias unfucklock="sudo loginctl unlock-sessions" # kde screenlocker can eat a bag of dicks
+alias lg="lazygit"
