@@ -17,3 +17,6 @@
 # alias gs="gs -dNOSAFER"
 # haskell stuff
 # [ -f "/home/mark/.ghcup/env" ] && source "/home/mark/.ghcup/env" # ghcup-env
+
+# python formatter for aggietime api
+alias black="~/.local/bin/black"
