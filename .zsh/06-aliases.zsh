@@ -32,8 +32,6 @@ alias ytmax="yt-dlp -f 'bestvideo*+bestaudio/best' --remux-video mp4"
 
 # custom
 alias DID_I_FUCKING_STUTTER='echo "Aplogies, milord; right away." ; sudo $(fc -ln -1)'
-alias usu-vpn-staff="sudo openconnect sslvpn.usu.edu/staff"
-alias usu-vpn-staff-cookie="wl-paste | sudo openconnect sslvpn.usu.edu/staff --cookie-on-stdin" # login to https://sslvpn.usu.edu/staff and grab the `webvpn` cookie and put it on the clipboard before running this command to have it automagically work. fuck you, cisco
 alias remove-orphans="pacman -Qtdq | sudo pacman -Rns -"
 alias md-to-pdf="pandoc -o output.pdf"
 # alias copy="xclip -selection c" # used by piping into `copy` e.g. `cat README.md | copy` ONLY WORKS ON XORG
