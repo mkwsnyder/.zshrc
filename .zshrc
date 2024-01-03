@@ -14,3 +14,7 @@ for config (~/.zsh/*.zsh) source $config
 
 # https://github.com/zsh-users/zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# https://github.com/ajeetdsouza/zoxide
+# also should install `fzf` for it
+eval "$(zoxide init zsh)"
